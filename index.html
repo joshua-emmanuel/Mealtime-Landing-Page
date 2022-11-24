@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mealtime</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-md shadow-sm">
+      <div class="container">
+        <!-- NavBar Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/mealtime-logo.svg" alt="Mealtime Logo" width="100"
+            class="d-inline-block align-text-top">
+        </a>
+        <!-- NavBar Toggler Icon -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navigation Menu -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <!-- Dropdown Menu -->
+            <li class="nav-item dropdown row align-items-center">
+              <img class="col account-icon" src="assets/images/account-icon.svg" width="21px" alt="account icon">
+              <a class="col nav-link px-0 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Account</a>
+              <ul class="dropdown-menu shadow-sm py-0">
+                <li>
+                  <a class="dropdown-item bt-1 row py-2 ps-2" href="#">
+                    <img class="col icon p-0" width="15" src="assets/images/customer-icon.svg" alt="">
+                    <span class="col p-0 ps-1">Customer</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item row py-2 ps-2" href="#">
+                    <img class="col icon p-0" width="15" src="assets/images/driver-icon.svg" alt="">
+                    <span class="col p-0 ps-1">Driver</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item row py-2 ps-2" href="#">
+                    <img class="col icon p-0" width="15" src="assets/images/restaurant-icon.svg" alt="">
+                    <span class="col p-0 ps-1">Restaurants</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item row py-2 ps-2" href="#">
+                    <img class="col icon p-0" width="15" src="assets/images/logistics-icon.svg" alt="">
+                    <span class="col p-0 ps-1">Logistics</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item row py-2 ps-2" href="#">
+                    <img class="col icon p-0" width="15" src="assets/images/hubs-icon.svg" alt="">
+                    <span class="col p-0 ps-1">Hubs</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!-- Nav Link -->
+            <li class="ms-md-5 nav-item row align-items-center">
+              <img class="col ps-1 ps-md-0 cart-icon " src="assets/images/shopping-cart-icon.svg" alt="cart icon">
+              <a class="col nav-link px-0" href="#">Cart</a>
+            </li>
+            <!-- Dropdoown Menu -->
+            <li class="ms-md-5 ps-2 ps-md-0 nav-item dropdown row align-items-center">
+              <img class="col-6 nav-menu-icon px-0" src="assets/images/menu-icon.svg" width="21px" alt="menu icon">
+              <a class="col-6 nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Menu</a>
+              <ul class="dropdown-menu shadow-sm py-0">
+                <li>
+                  <a class="dropdown-item bt-1 row py-2 ps-2" href="#">
+                    <img class="col icon p-0" width="15" src="assets/images/customer-icon.svg" alt="">
+                    <span class="col p-0 ps-1">Delivery locations</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item row py-2 ps-2" href="#">
+                    <img class="col icon p-0" width="15" src="assets/images/driver-icon.svg" alt="">
+                    <span class="col p-0 ps-1">Community</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item row py-2 ps-2" href="#">
+                    <img class="col icon p-0" width="15" src="assets/images/restaurant-icon.svg" alt="">
+                    <span class="col p-0 ps-1">Add your restaurant</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item row py-2 ps-2" href="#">
+                    <img class="col icon p-0" width="15" src="assets/images/logistics-icon.svg" alt="">
+                    <span class="col p-0 ps-1">Blogs & News</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item row py-2 ps-2" href="#">
+                    <img class="col icon p-0" width="15" src="assets/images/hubs-icon.svg" alt="">
+                    <span class="col p-0 ps-1">Contact Us</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="container">
+        <div class="row align-items-center ps-3 ps-md-0">
+          <div class="col-md-6">
+            <h1 class="pt-3 pt-md-0 fw-900 fs-1">Your Favourite<br>Food is on the way!</h1>
+            <p width="550" class="text-muted">Order lunch, fuel for meetings, home or<br>late-night deliveries to the
+              office.</p>
+            <div class="fs-6 rounded px-2 py-2 bg-muted hero-form">
+              <input type="text" class="transparent-input" placeholder="Type your location">
+              <span><button class="btn btn-dark rounded text-light">Search</button></span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="img-fluid hero-illustration" src="assets/images/Hero-Illustration.svg" alt="">
+          </div>
+        </div>
+        <div class="hero-background d-none d-md-block">
+          <img class="hero-background-img" src="assets/images/Hero-Background.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu Section -->
+    <section>
+      <div class="container mb-5 pb-5">
+        <div class="row justify-content-end align-items-end mb-4">
+          <h2 class="col fw-900">Menu</h2>
+          <p class="col row justify-content-end me-0 pe-0 fw-bold">View all<img class="ms-1 arrow-img"  src="assets/images/right-arrow.svg" alt=""></p>
+        </div>
+        <!-- Slider main container -->
+        <!-- Swiper -->
+        <div class="swiper mySwiper pb-5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide menu-item">
+              <div class="menu-icon">
+                <img class="menu-icon" src="assets/images/pizza-icon.svg" alt="">
+              </div>
+              <p class="fw-bold">Pizza</p>
+            </div>
+            <div class="swiper-slide menu-item">
+              <div class="menu-icon">
+                <img class="menu-icon" src="assets/images/chicken-icon.svg" alt="">
+              </div>
+              <p class="fw-bold">Chicken</p>
+            </div>
+            <div class="swiper-slide menu-item">
+              <div class="menu-icon">
+                <img class="menu-icon" src="assets/images/burger-icon.svg" alt="">
+              </div>
+              <p class="fw-bold">Burger</p>
+            </div>
+            <div class="swiper-slide menu-item">
+              <div class="menu-icon">
+                <img class="menu-icon" src="assets/images/salad-icon.svg" alt="">
+              </div>
+              <p class="fw-bold">Salad</p>
+            </div>
+            <div class="swiper-slide menu-item">
+              <div class="menu-icon">
+                <img class="menu-icon" src="assets/images/fries-icon.svg" alt="">
+              </div>
+              <p class="fw-bold">Fries</p>
+            </div>
+            <div class="swiper-slide menu-item">
+              <div class="menu-icon">
+                <img class="menu-icon" src="assets/images/rice-icon.svg" alt="">
+              </div>
+              <p class="fw-bold">Rice</p>
+            </div>
+            <div class="swiper-slide menu-item">
+              <div class="menu-icon">
+                <img class="menu-icon" src="assets/images/pizza-icon.svg" alt="">
+              </div>
+              <p class="fw-bold">Pizza</p>
+            </div>
+            <div class="swiper-slide menu-item">
+              <div class="menu-icon">
+                <img class="menu-icon" src="assets/images/fries-icon.svg" alt="">
+              </div>
+              <p class="fw-bold">Fries</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+    <!-- Dish Section -->
+    <section>
+      <div class="container">
+        <div class="row justify-content-end align-items-end mb-4">
+          <h2 class="col fw-900">Popular Dishes</h2>
+          <p class="col row justify-content-end me-0 pe-0 fw-bold">View all<img class="ms-1 arrow-img"  src="assets/images/right-arrow.svg" alt=""></p>
+        </div>
+        <!-- Slider main container -->
+        <!-- Swiper -->
+        <div class="swiper mySwiper2 pb-5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="dish">
+                <img src="assets/images/classic-salad.svg" alt="">
+                <div class="d-flex justify-content-between">
+                  <p class="fw-bold">Classic Caesar Salad</p>
+                  <p class="fw-bold text-muted">N2500</p>
+                </div>
+                <div class="text-muted d-flex justify-content-between">
+                  <div class="d-flex dish-rating">
+                    <img src="assets/images/star.svg" alt="">
+                    <p class="fw-bold text-black">4.5</p>
+                  </div>
+                  <div class="food-store">
+                    <p>Kings Food Stores</p>
+                  </div>
+                  <div class="food-group">
+                    <p>Salad</p>
+                  </div>
+                  <div class="d-flex dish-time">
+                    <img src="assets/images/clock.svg" alt="">
+                    <p>20 - 30 mins</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="dish">
+                <img src="assets/images/afropop-salad.svg" alt="">
+                <div class="d-flex justify-content-between">
+                  <p class="fw-bold">Afropop Salad</p>
+                  <p class="fw-bold text-muted">N1500</p>
+                </div>
+                <div class="text-muted d-flex justify-content-between">
+                  <div class="d-flex dish-rating">
+                    <img src="assets/images/star.svg" alt="">
+                    <p class="fw-bold text-black">4.5</p>
+                  </div>
+                  <div class="food-store">
+                    <p>Kings Food Stores</p>
+                  </div>
+                  <div class="food-group">
+                    <p>Salad</p>
+                  </div>
+                  <div class="d-flex dish-time">
+                    <img src="assets/images/clock.svg" alt="">
+                    <p>50 - 55 mins</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="dish">
+                <img src="assets/images/fruity-salad.jpeg" class="fruity-salad" alt="">
+                <div class="d-flex justify-content-between">
+                  <p class="fw-bold">Fruity Salad</p>
+                  <p class="fw-bold text-muted">N3500</p>
+                </div>
+                <div class="text-muted d-flex justify-content-between">
+                  <div class="d-flex dish-rating">
+                    <img src="assets/images/star.svg" alt="">
+                    <p class="fw-bold text-black">4.5</p>
+                  </div>
+                  <div class="food-store">
+                    <p>Kings Food Stores</p>
+                  </div>
+                  <div class="food-group">
+                    <p>Salad</p>
+                  </div>
+                  <div class="d-flex dish-time">
+                    <img src="assets/images/clock.svg" alt="">
+                    <p>10 - 15 mins</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+    <div class="position-relative d-none d-lg-block">
+      <img class="position-absolute section-element" src="assets/images/section-element.svg" alt="">
+    </div>
+
+    <!-- Brands Section -->
+    <section class="mt-5 pt-5 mb-5 pb-5">
+      <div class="container mb-5">
+        <div class="row justify-content-end align-items-end mb-4">
+          <h2 class="col fw-900">Popular Dishes</h2>
+          <p class="col row justify-content-end me-0 pe-0 fw-bold">View all<img class="ms-1 arrow-img"  src="assets/images/right-arrow.svg" alt=""></p>
+        </div>
+        <!-- Slider main container -->
+        <!-- Swiper -->
+        <div class="swiper mySwiper2 pb-5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="dish">
+                <img src="assets/images/chicken-republic.svg" alt="">
+                <div class="d-flex justify-content-between">
+                  <p class="fw-bold">Chicken Republic</p>
+                </div>
+                <div class="text-muted d-flex justify-content-between">
+                  <div class="d-flex dish-rating">
+                    <img src="assets/images/star.svg" alt="">
+                    <p class="fw-bold text-black">4.5</p>
+                  </div>
+                  <div class="food-store">
+                    <p>Kings Food Stores</p>
+                  </div>
+                  <div class="food-group">
+                    <p>Salad</p>
+                  </div>
+                  <div class="d-flex dish-time">
+                    <img src="assets/images/clock.svg" alt="">
+                    <p>20 - 30 mins</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="swiper-slide">
+              <div class="dish">
+                <img src="assets/images/chicken-house.svg" alt="">
+                <div class="d-flex justify-content-between">
+                  <p class="fw-bold">Chicken House</p>
+                </div>
+                <div class="text-muted d-flex justify-content-between">
+                  <div class="d-flex dish-rating">
+                    <img src="assets/images/star.svg" alt="">
+                    <p class="fw-bold text-black">4.5</p>
+                  </div>
+                  <div class="food-store">
+                    <p>Kings Food Stores</p>
+                  </div>
+                  <div class="food-group">
+                    <p>Salad</p>
+                  </div>
+                  <div class="d-flex dish-time">
+                    <img src="assets/images/clock.svg" alt="">
+                    <p>50 - 55 mins</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="swiper-slide">
+              <div class="dish">
+                <img class="chicken-capitol" src="assets/images/chicken-capitol.jfif" alt="">
+                <div class="d-flex justify-content-between">
+                  <p class="fw-bold">Chicken Capitol</p>
+                </div>
+                <div class="text-muted d-flex justify-content-between">
+                  <div class="d-flex dish-rating">
+                    <img src="assets/images/star.svg" alt="">
+                    <p class="fw-bold text-black">4.5</p>
+                  </div>
+                  <div class="food-store">
+                    <p>Kings Food Stores</p>
+                  </div>
+                  <div class="food-group">
+                    <p>Salad</p>
+                  </div>
+                  <div class="d-flex dish-time">
+                    <img src="assets/images/clock.svg" alt="">
+                    <p>10 - 15 mins</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Mealtime Mobile App Section -->
+    <section class="mb-5 pb-5">
+      <div class="container mb-5">
+        <div class="bg-mealtime p-5 rounded-5">
+          <div class="row pt-5 mt-4 mt-md-0 pt-md-0">
+            <div class="col-md-6 ps-4 align-self-center">
+              <h1>Get the Mealtime App</h1>
+              <p class="text-muted">We will send you a link, open your phone to download the app.</p>
+              <img class="" src="assets/images/playstore-logo.svg" alt="">
+              <img classs="" src="assets/images/appstore-logo.svg" alt="">
+            </div>
+            <div class="d-none d-xl-block col-6 align-self-start mealtime-mobile-app overflow-sm-hidden">
+              <img class="mealtime-mobile" src="assets/images/mealtime-mobile-app.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="mb-5 pb-5">
+      <div class="container">
+        <h1 class="mb-5">Testimonials</h1>
+        <div class="row gap-xl-4 gap-sm-3">
+          <div class="col-lg shadow-lg px-4 pt-4 pb-1 rounded-5 border border-secondary mb-0 mb-4 mb-md-0">
+            <div class="row justify-content-between align-items-center">
+              <h3 class="col-3">Malik Abdulsalam</h3>
+              <img class="col-4 col-lg-4 col-sm-2" src="assets/images/malik-abdulsalam.svg" alt="">
+            </div>
+            <div>
+              <p class="huge-quote">“</p>
+              <p class="text-center text-muted">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <p class="fw-bold text-center pt-3">Gwarimpa, Abuja</p>
+            </div>
+          </div>
+          <div class="col-lg px-4 pt-4 pb-1 rounded-5 border border-secondary mb-0 mb-4 mb-md-0">
+            <div class="row justify-content-between align-items-center">
+              <h3 class="col-3">Samson Samuels</h3>
+              <img class="col-4 col-lg-4 col-sm-2" src="assets/images/samson-samuels.svg" alt="">
+            </div>
+            <div>
+              <p class="huge-quote">“</p>
+              <p class="text-center text-muted">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <p class="fw-bold text-center pt-3">Gwarimpa, Abuja</p>
+            </div>
+          </div>
+          <div class="col-lg px-4 pt-4 pb-1 rounded-5 border border-secondary mb-0 mb-4 mb-md-0">
+            <div class="row justify-content-between align-items-center">
+              <h3 class="col-3">Peace Aderibigbe</h3>
+              <img class="col-4 col-lg-4 col-sm-2" src="assets/images/peace-aderibigbe.svg" alt="">
+            </div>
+            <div>
+              <p class="huge-quote">“</p>
+              <p class="text-center text-muted">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <p class="fw-bold text-center pt-3">Gwarimpa, Abuja</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subsribe Section -->
+    <section>
+      <div class="bg-mealtime p-5 h-50">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <h1>Subscribe Newsletter</h1>
+              <p class="text-muted">Be the first to hear about our latest menus</p>
+            </div>
+            <div class="col-md-4 bg-white subscribe-form rounded-4">
+              <input class="transparent-input" type="email" placeholder="Enter your email address">
+              <button class="btn btn-dark fw-bold rounded-3"><img class="me-2" src="assets/images/subscribe-icon.svg" alt="">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="bg-black text-white position-relative">
+        <img class="position-absolute bottom-0 start-0" src="assets/images/footer-element.svg" alt="">
+        <div class="container pt-5 pb-3">
+          <div class="px-5 pt-5 pb-2">
+            <div class="row pb-5 justify-content-center align-items-center">
+              <div class="col-md-5">
+                <img class="mb-4" src="assets/images/mealtime-footer-logo.svg" alt="">
+                <p class="w-75">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                  printer.</p>
+                <div>
+                  <img class="me-5" src="assets/images/facebook-icon.svg" alt="">
+                  <img class="me-5" src="assets/images/linkedin-icon.svg" alt="">
+                  <img class="me-5" src="assets/images/instagram-icon.svg" alt="">
+                  <img class="me-5" src="assets/images/twitter-icon.svg" alt="">
+                </div>
+              </div>
+            
+              <div class="col-md-2 mt-3 mt-md-0">
+                <p class="fw-bold mb-md-4">Company</p>
+                <p>About</p>
+                <p>Features</p>
+                <p>Contact Us</p>
+              </div>
+            
+              <div class="col-md-2">
+                <p class="fw-bold mb-md-4">Delivery Locations</p>
+                <p>Indonesia</p>
+                <p>Singapore</p>
+                <p>Hong Kong</p>
+              </div>
+            
+              <div class="col-md-2">
+                <p class="fw-bold mb-md-4">Help</p>
+                <p>Help Center</p>
+                <p>Contact Support</p>
+                <p>Instructions</p>
+              </div>
+            </div>
+            <p class="text-center">© Mealtime 2020. All rights reserved</p>
+          </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+* {
+  font-family: 'Mulish', sans-serif;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-background-img {
+  position: absolute;
+  transform: rotate();
+  width: 65vw;
+  top: -15%;
+  right: -12%;
+  z-index: -1;
+  aspect-ratio: 1;
+}
+
+.hero-form {
+  width: 300px;
+}
+
+.transparent-input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.bg-muted {
+  background-color: #F9F9F9;
+}
+
+.hero>.container {
+  padding-top: 1rem;
+  padding-bottom: 14rem;
+}
+
+nav.navbar {
+  background-color: #fff;
+}
+
+img.account-icon,
+img.nav-menu-icon {
+  max-width: 40px;
+}
+
+img.account-icon,
+img.menu-icon {
+  max-width: 40px;
+}
+
+img.cart-icon {
+  max-width: 40px;
+}
+
+.nav-menu-icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.dropdown-menu {
+  border: 1px solid #FFF2CF;
+  border-radius: 1rem;
+  top: 55px !important;
+}
+
+.icon {
+  max-width: 40px;
+  width: 12px;
+}
+
+.dropdown-item {
+  font-size: 0.75rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.bt-1 {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.dropdown-item:hover {
+  background-color: #FFF2CF;
+}
+
+.section-element {
+  z-index: -999;
+  top: -1200px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* border: 3px solid black; */
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* .swiper-slide-active {
+  background-color: #000;
+  color: #FFF;
+  width: 211px;
+  height: 274px;
+  border-radius: 50px;
+  box-shadow: 0px 25px 50px rgba(166, 166, 166, 0.25);
+} */
+
+/* .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.menu-item {
+  text-align: center;
+  width: 163px;
+  height: 212px;
+  border-radius: 50px;
+  background-color: #FFF6DA;
+  border: 1px solid #CDCDCD;
+  display: grid;
+  place-items: center;
+}
+
+.menu-icon {
+  text-align: center;
+  display: grid;
+  place-items: center;
+  width: 82px;
+  height: 82px;
+  border-radius: 41px;
+  background-color: #FFF;
+}
+
+.menu-item p {
+  margin-top: -3rem;
+}
+
+.menu-item:hover {
+  background-color: #000;
+  color: #FFF;
+  width: 211px;
+  /* height: 274px; */
+  border-radius: 50px;
+  box-shadow: 0px 25px 50px rgba(166, 166, 166, 0.25);
+  z-index: 999;
+}
+
+.menu-item:hover > .menu-icon,
+.menu-item:hover>.menu-icon img {
+  background-color: #FFF6DA;
+}
+
+.dish {
+  width: 445px;
+}
+
+.dish-rating,
+.food-group,
+.food-store,
+.dish-time {
+  place-items: center;
+}
+
+.dish-time,
+.dish-rating {
+  gap: 0.35rem;
+}
+
+.dish-rating p,
+.dish-time p,
+.food-store p,
+.food-group p {
+  margin: 0;
+}
+
+.fruity-salad,
+.chicken-capitol {
+  border-radius: 50px;
+  width: 445px;
+  height: 258px;
+  aspect-ratio: 1/1;
+}
+
+.bg-mealtime {
+  background-color: #FFF6DA;
+  height: 494px;
+}
+
+.mealtime-mobile-app {
+  position: relative;
+  top: -155px;
+  right: 70px;
+}
+
+.mealtime-mobile {
+  z-index: 999;
+  width: 600px;
+}
+
+.huge-quote {
+  font-size: 144px;
+  font-weight: 700;
+  margin-bottom: -80px;
+  margin-top: -30px;
+}
+
+.arrow-img {
+  width: 8px;
+  padding: 0;
+}
+
+.subscribe-form {
+  width: 360px;
+  padding-top: 0.7rem;
+  height: 60px;
+}
